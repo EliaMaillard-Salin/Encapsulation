@@ -1,31 +1,26 @@
-// SDL_RAYLIB_TEST.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
+// StartProjecty.cpp : Ce fichier contient la fonction 'main'. L'exécution du programme commence et se termine à cet endroit.
 //
 
-#include <iostream>
-
-#define SDL_MAIN_HANDLED
-#include <SDL.h>
-#include <raylib.h>
+#include "pch.h"
+#include "LibManager.h"
 #include "Vectors.h"
-
+#include "Shapes.h"
 int main()
 {
+    LibManager lm = LibManager(RAYLIB);
+    CustomRectangle rect = CustomRectangle(VECT2(10.f, 100.f), 20.f, 20.f, COLOR(255,0,0,255));
+    CustomCircle circle = CustomCircle(VECT2(100.f, 100.f), 20.f);
 
-    Vector2 vect{ 1.f,2.5f };
-    VECT2 VECT = VECT2().RaylibVectToVECT2(vect);
-    std::cout << VECT;
+    lm.SetBackgroundColor(COLOR(0, 0, 255, 255));
 
-    std::cout << "Hello World!\n";
+    lm.StartDrawingMode();
 
-    Color pixelColor = Color{255,0,0,255};
+    lm.CustomDrawCircle(&circle);
 
-    InitWindow(500, 500, "COINC");
+    lm.EndDrawingMode();
 
-    BeginDrawing();
+    system("pause");
 
-    DrawPixel(5, 10, pixelColor);
-    EndDrawing();
-    while(true){}
 }
 
 // Exécuter le programme : Ctrl+F5 ou menu Déboguer > Exécuter sans débogage

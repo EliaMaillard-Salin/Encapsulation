@@ -2,8 +2,8 @@
 #define VECTORS__H_
 
 #include <math.h>
-#include <raylib.h>
-#include <iostream>
+#include "pch.h"
+
 
 struct VECT2
 {
