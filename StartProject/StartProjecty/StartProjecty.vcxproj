@@ -136,6 +136,7 @@
     <ClCompile Include="LibManager.cpp" />
     <ClCompile Include="pch.cpp" />
     <ClCompile Include="Shapes.cpp" />
+    <ClCompile Include="Sprites.cpp" />
     <ClCompile Include="StartProjecty.cpp" />
     <ClCompile Include="Vectors.cpp" />
     <ClCompile Include="Windows.cpp" />
@@ -145,6 +146,7 @@
     <ClInclude Include="LibManager.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Shapes.h" />
+    <ClInclude Include="Sprites.h" />
     <ClInclude Include="Vectors.h" />
     <ClInclude Include="Windows.h" />
   </ItemGroup>

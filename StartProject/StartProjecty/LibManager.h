@@ -19,35 +19,29 @@ class LibManager
 {
 public:
 
-	LibManager(LibType choosenLib);
+	//LibManager(LibType choosenLib);
 
-	void init_window(LibType choosenLib);
-	void init_sprite_manager(LibType choosenLib);
-	void init_time_manager(LibType choosenLib);
+	//void init_window(LibType choosenLib);
+	//void init_sprite_manager(LibType choosenLib);
+	//void init_time_manager(LibType choosenLib);
 
-	void SetBackgroundColor(COLOR color);
 
-	void StartDrawingMode();
-	void EndDrawingMode();
 
-	void DrawText();
+	//void StartDrawingMode();
+	//void EndDrawingMode();
 
-	void CustomDrawRectangle(CustomRectangle* pRenctangle);
-	void CustomDrawCircle(CustomCircle* pRenctangle);
+	//void DrawText();
 
-	void StartFrame();
-	void EndFrame();
+	//void CustomDrawRectangle(CustomRectangle* pRenctangle);
+	//void CustomDrawCircle(CustomCircle* pRenctangle);
+
+	//void StartFrame();
+	//void EndFrame();
 
 
 private:
-	LibType m_choosenLib;
-	SDL_Renderer* m_renderer;
 
-	COLOR m_backgroundColor;
-	float m_deltaTime;
-	float m_startframe;
-	float m_endframe;
-	float m_fps;
+
 };
 
 #endif

@@ -5,19 +5,17 @@
 #include "LibManager.h"
 #include "Vectors.h"
 #include "Shapes.h"
+#include "Sprites.h"
+#include "Windows.h"
+
 int main()
 {
-    LibManager lm = LibManager(RAYLIB);
-    CustomRectangle rect = CustomRectangle(VECT2(10.f, 100.f), 20.f, 20.f, COLOR(255,0,0,255));
-    CustomCircle circle = CustomCircle(VECT2(100.f, 100.f), 20.f);
+    Window* window;
+    window->ChooseLib(LibType::SDL);
 
-    lm.SetBackgroundColor(COLOR(0, 0, 255, 255));
+    window->
 
-    lm.StartDrawingMode();
-
-    lm.CustomDrawCircle(&circle);
-
-    lm.EndDrawingMode();
+    Sprite* pSprite = new Sprite();
 
     system("pause");
 
